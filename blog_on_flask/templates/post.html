@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <br><br>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+    <a href="{{ url_for('index') }}"><button type="button" class="btn btn-success">На главную страницу</button></a>
+    <a href="{{ url_for('delete', post_id=post['id']) }}"><button type="button" class="btn btn-danger">Удалить</button></a>
+    </div>
+{% endblock %}
+
+
+<a href="{{ url_for('get_post', post_id=post['id']) }}"></a>

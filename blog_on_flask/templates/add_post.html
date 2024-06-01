@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <h1>Добавить новый пост</h1>
+
+  <form method="post">
+    <label for="title">Заголовок</label><br>
+    <input type="text" class="form-control" id="title" name="title"><br>
+    <label for="title">Краткий текст</label><br>
+    <input type="text" class="form-control" id="intro" name="intro"><br>
+    <label for="content">Полный текст</label><br>
+    <textarea class="form-control" rows="10" id="content" name="content"></textarea><br>
+    <input class="btn btn-success" type="submit" value="Опубликовать">
+  </form>
+  </div>
+{% endblock %}
+
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  <label for="exampleFormControlTextarea1" >Example textarea</label>
